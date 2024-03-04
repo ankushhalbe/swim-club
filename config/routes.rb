@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # Resources
   resources "sessions"
   resources "users"
+  resources "public"
   
   # Login/logout
   get("/login", { :controller => "sessions", :action => "new" })
